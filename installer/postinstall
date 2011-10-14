@@ -1,0 +1,7 @@
+#! /bin/sh
+#
+# Unload and re-load the daemon
+#
+LDP="/Library/LaunchDaemons/com.coriolis-systems.staticrouted.plist"
+launchctl unload -w "$LDP"
+launchctl load -w "$LDP"
